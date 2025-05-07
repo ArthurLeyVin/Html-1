@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #aaa;
+            padding: 8px 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th rowspan="2">Name</th>
+                    <th rowspan="2">ID</th>
+                    <th colspan="2">Membership Dates</th>
+                    <th rowspan="2">Balance</th>
+                </tr>
+                <tr>
+                    <th>joined</th>
+                    <th>Canceled</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Margeret Nguyen</th>
+                    <td>427311</td>
+                    <td>June 3, 2010</td>
+                    <td>n/a</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <th>Edvard Galinski</th>
+                    <td>533175</td>
+                    <td>January 13, 2011</td>
+                    <td>April 8, 2017</td>
+                    <td>37.00</td>
+                </tr>
+                <tr>
+                    <th>Hoshi Nakamura</th>
+                    <td>601942</td>
+                    <td>July 23, 2012</td>
+                    <td>n/a</td>
+                    <td>15.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" style="text-align: right; border-top: 2px dashed #666;"><strong>Total balance</strong></td>
+                    <td style="border-top: 2px dashed #666;"><strong>52.00</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        .grid-container {
+            display : grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: repeat(4, 1fr);*/ 
+            /* 4 rows of equal height */ 
+            gap: 20px; 
+            padding: 10px;
+            color: darkblue;
+        }
+        .box {
+        background-color: var(--primary-color);
+        padding: 30px;
+        border: 1px solid black;
+        border-radius: 8px;
+        position: relative;
+        }
+        .box2 {
+            background-image: url("./images/photo_2024-04-10_23-47-54.jpg");
+        }
+        .box4 {
+            background-image: url("./images/photo_2024-04-10_23-47-54.jpg");
+        }
+        .box7{
+            background-image: url("./images/photo_2024-04-10_23-47-54.jpg");
+        } 
+        .box8 {
+            background-image: url("./images/photo_2024-04-10_23-47-54.jpg");
+        }
+        .box9 {
+            background-image: url("./images/photo_2024-04-10_23-47-54.jpg");
+        }
+        .box10 {
+            background-image: url("./images/photo_2024-04-10_23-47-54.jpg");
+        }
+        .box1 {
+            grid-column:span 2;
+            background-color: black;
+            color: white;
+            background-image: url("./images/photo_2017-11-25_00-24-04.jpg");
+            /* grid-column: span 3;
+            background-image: url("/inflicted.png"); */
+        }
+        .box3 {
+            grid-column: span 3;
+            background-color: purple;
+            color: white;
+            /* grid-column: span 4; */
+        }
+        /* .box4 {
+            grid-column: span 2;
+        } */
+        .box5 {
+            grid-column: 2 / span 2;
+            background-image: url("./images/photo_2024-04-10_23-47-54.jpg");
+            /* grid-column: span 2; */
+        }
+        .box6 {
+            grid-column: 1 / span 2;
+            background-image: url("./images/photo_2024-04-10_23-47-54.jpg");
+        }
+        /* .box6 {
+            grid-column: span 3;
+        } */
+        /* .box8 {
+            grid-column: span 2;
+        } */
+        .box11 {
+            grid-column: span 3; 
+            background-image: url("./images/photo_2024-04-10_23-47-54.jpg");
+            /* grid-column: span 4; */
+        }
+        
+        .new {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            background-color: green;
+            color: white;
+            padding: 4px 8px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 3px;
+            transform: rotate(-25deg);
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="box box1">
+            <h1>CSS Grid Layout</h1>
+            <p>This site is a collection of examples, video and other information to help you learn CSS Grid Layout.Developed and maintaied by <ins>Rachel Andrew.</ins></p>
+        </div>
+        <div class="box box2">
+            <h2>The Video Tutorial</h2>
+            <p>A collection of short and to the point videos, demonstrating various parts of the CSS Grid Layout specification.</p>
+        </div>
+        <div class="box box3">
+            <h2>Get Started Guide</h2>
+            <p>A structured guide to resources that will help you to start lerning CSS Grid Layout.</p>
+        </div>
+        <div class="box box4">
+            <div class="new">New!</div>
+            <h2>The Examples</h2>
+            <p>Small examples of the  CSS Grid Layout specification. Each demonstrates a feature of the specification. Includes new Subgrid examples!</p>
+        </div>
+        <div class="box box5">
+            <h2>Patterns</h2>
+            <p>Grid & Go. A set of example patterns with fallbacks for older browsers.</p>
+        </div>
+        <div class="box box6">
+            <h2>Resurces</h2>
+            <p>More links to artices, tutorials and conference preswntions that will help you learn CSS Grid Layout.</p>
+        </div>
+        <div class="box box7">
+            <h2>CSS Layout News</h2>
+            <p>Sign up for a weekly email full of CSS Layout links and resources.</p>
+        </div>
+        <div class="box box8">
+            <h2>Questions?</h2>
+            <p>Ask me anything about Grid Layout over at my GidHub Grid AMA.</p>
+        </div>
+        <div class="box box9">
+            <h2>About CSS Grid</h2>
+            <p>What even is this? Do I need to care?</p>
+        </div>
+        <div class="box box10">
+            <h2>News</h2>
+            <p>Infrequent updates on this site.</p>
+        </div>
+        <div class="box box11">
+            <h2>GridBugs!</h2>
+            <p>If you have found a bug in a browser, or want to see what we have found so far,check out this site.</p>
+        </div>
+    </div>
+</body>
+</html>
